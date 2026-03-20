@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.DS_Store
+Thumbs.db
+
+# Electron builder
+release/
+pack/
+
+# Temporary files
+src/main/temp/
+assets/icon256.png
+fix_icon.ps1

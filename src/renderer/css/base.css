@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap');
+
+
+:root {
+  --bg: #1d1d22;
+  --titlebar: #212126;
+  --surface: #202025;
+  --footer: #232328;
+  --stroke: #28282d;
+
+
+  --a1: #5eead4;
+  --a2: #818cf8;
+  --a3: #c084fc;
+  --a4: #fb7185;
+
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.35);
+
+  --iris: linear-gradient(135deg,
+      rgba(94, 234, 212, 0.14) 0%,
+      rgba(129, 140, 248, 0.12) 30%,
+      rgba(192, 132, 252, 0.14) 60%,
+      rgba(251, 113, 133, 0.09) 100%);
+
+
+  --gap: 10px;
+  --r-card: 6px;
+  --r-app: 3px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+body {
+  font-family: 'Geist', sans-serif;
+  background: transparent;
+  color: var(--text);
+  height: 100vh;
+  padding: 10px;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-top-color: var(--a2);
+  border-radius: 50%;
+  animation: spin 0.65s linear infinite;
+  align-self: center;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none !important;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursor Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="loading-screen" class="loading-overlay">
+    <div class="loader-container">
+      <div class="loading-bar">
+        <div class="progress-line"></div>
+      </div>
+      <p class="loading-text">Initializing...</p>
+    </div>
+  </div>
+
+  <div class="app-container">
+    <div id="drop-overlay" class="drop-overlay hidden">
+      <div class="drop-text">📥 Drop .zip pack to install!</div>
+    </div>
+
+    <div id="context-menu" class="context-menu">
+      <div id="ctx-delete" class="context-item danger">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21 5.98c-3.33-.33-6.67-.5-10-.5-1.67 0-3.33.08-5 .25L2 5.98M8 4.97l.22-1.31C8.38 2.89 8.5 2 10.11 2h3.78c1.61 0 1.73.89 1.89 1.66l.22 1.31M18.85 9.14l-.65 10.07C18.1 20.71 18 22 16.21 22H7.79c-1.79 0-1.9-1.29-2-2.79l-.65-10.07"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Delete Pack</span>
+      </div>
+    </div>
+
+    <div class="title-bar">
+      <div class="title-bar-title">Cursor Manager</div>
+
+      <div style="display: flex; align-items: center; -webkit-app-region: no-drag; margin-right: 15px;">
+        <button id="btn-reset" class="btn btn-secondary"
+          style="padding: 6px 14px; font-size: 11px; height: auto; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22 12c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2c2.22 0 4.28.72 5.94 1.94L18 6h4V2l-2.06 1.94C17.7 2.22 15 1 12 1 5.92 1 1 5.92 1 12s4.92 11 11 11 11-4.92 11-11h-1z" />
+          </svg>
+          Reset Default
+        </button>
+      </div>
+
+      <div class="title-bar-controls">
+        <button id="btn-minimize" class="title-bar-btn">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 13H5c-.55 0-1-.45-1-1s.45-1 1-1h14c.55 0 1 .45 1 1s-.45 1-1 1z" />
+          </svg>
+        </button>
+        <button id="btn-close" class="title-bar-btn btn-close">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.41 12l4.3-4.29c.39-.39.39-1.02 0-1.41s-1.02-.39-1.41 0L12 10.59 7.71 6.3c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41L10.59 12l-4.3 4.29c-.39.39-.39 1.02 0 1.41.2.2.45.3.71.3s.51-.1.71-.29L12 13.41l4.29 4.3c.2.2.45.3.71.3s.51-.1.71-.29c.39-.39.39-1.02 0-1.41L13.41 12z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <div id="view-packs" class="view active">
+        <div id="grid" class="grid-container"></div>
+      </div>
+    </main>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content" style="width: 450px; max-width: 90vw;">
+        <h2 id="modal-title" style="margin-bottom: 10px;">Pack Name</h2>
+        <img id="modal-preview" src="" alt="Preview" style="display: none;">
+
+        <div id="carousel-container" class="carousel-wrapper"
+          style="flex-direction: column; padding: 15px 10px 10px; min-height: 180px;">
+          <div
+            style="position: relative; width: 100%; display: flex; align-items: center; justify-content: center; height: 110px;">
+            <button id="btn-car-prev" class="car-btn car-btn-left" style="top: 50%;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.7 17.7a.996.996 0 01-1.41 0L6.71 13.1c-.39-.39-.39-1.02 0-1.41L11.3 7.1c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41L8.83 12l3.88 3.89c.38.38.38 1.02-.01 1.41z" />
+              </svg>
+            </button>
+            <div class="car-content">
+              <div class="car-img-box">
+                <img id="carousel-img" class="car-img" src="">
+              </div>
+              <div id="carousel-name" class="car-title">Fetching cursors...</div>
+            </div>
+            <button id="btn-car-next" class="car-btn car-btn-right" style="top: 50%;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.3 17.7a.996.996 0 001.41 0l4.59-4.6c.39-.39.39-1.02 0-1.41L12.7 7.1c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41L15.17 12l-3.88 3.89c-.38.38-.38 1.02.01 1.41z" />
+              </svg>
+            </button>
+          </div>
+          <div id="carousel-mini-grid" class="carousel-mini-grid"></div>
+          <div id="install-progress-bar" class="install-progress hidden">
+            <div class="install-progress-track">
+              <div id="install-progress-fill" class="install-progress-fill"></div>
+            </div>
+            <span id="install-progress-label" class="install-progress-label">Processing...</span>
+          </div>
+        </div>
+        <div id="variant-selector" class="variant-selector hidden"></div>
+
+        <div class="modal-actions">
+          <button id="btn-cancel" class="btn btn-secondary" style="display: flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.31 12.26c.2.2.3.45.3.71s-.1.51-.29.71a.996.996 0 01-1.41 0L12 13.41l-1.91 1.91c-.2.2-.45.3-.71.3s-.51-.1-.71-.29a.996.996 0 010-1.41L10.59 12l-1.91-1.91c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0L12 10.59l1.91-1.91c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41L13.41 12l1.9 1.91c.01.2.01.26 0 .35z" />
+            </svg>
+            Cancel
+          </button>
+          <div id="modal-spinner" class="spinner hidden"></div>
+          <button id="btn-install" class="btn btn-primary" style="display: flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm3.12 11.23c.3.3.78.3 1.08 0 .3-.3.3-.78 0-1.08l-3.66-3.66c-.3-.3-.78-.3-1.08 0l-3.66 3.66c-.3.3-.3.78 0 1.08.3.3.78.3 1.08 0l2.37-2.37V15.5c0 .41.34.75.75.75s.75-.34.75-.75v-4.64l2.37 2.37z" />
+            </svg>
+            Install Pack
+          </button>
+          <button id="btn-apply" class="btn btn-success hidden" style="display: flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm4.78 7.78l-5.5 5.5c-.15.15-.35.22-.53.22s-.38-.07-.53-.22l-2.5-2.5c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l1.97 1.97 4.97-4.97c.29-.29.77-.29 1.06 0s.29.78 0 1.06z" />
+            </svg>
+            Apply Pack
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/renderer.js" type="module"></script>
+</body>
+
+</html>
