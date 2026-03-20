@@ -4,11 +4,8 @@ A premium, high-fidelity Windows cursor management application built with Electr
 
 ## ✨ Features
 
-- **Iridescent HUD Interface**: Sleek, glassmorphic design with native-feeling animations and transitions.
-- **3D Magnetic Previews**: Advanced hover effects using CSS perspectives and real-time math for a premium feel.
 - **Animated Previews**: Instant visual feedback of cursor animations before installation.
 - **Variant Support**: Smart handling of cursor packs with multiple stylistic variants (e.g., Light/Dark, Size).
-- **Registry Integration**: Safe and automated application of cursor files to the Windows Registry.
 - **Drag & Drop**: Direct installation of local cursor packs via .zip file dropout.
 - **One-Click Reset**: Quickly revert to Windows default cursors at any time.
 
