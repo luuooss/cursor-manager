@@ -1,1 +1,132 @@
-
+{
+  "version": "1.0",
+  "updatedAt": "2026-03-20T01:36:00Z",
+  "packs": [
+    {
+      "id": "crystal-clear-v5-aero",
+      "name": "Crystal Clear v5 - Aero",
+      "description": "High-fidelity transparent aero style.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/crystal_aero.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484277339193082108/crystal-clear-v5-aero-transparen.zip?ex=69bda47e&is=69bc52fe&hm=2553726ed410016281856dbaeac0ab25edc9fbdc16a46e82b8fce6384e506b6f&"
+    },
+    {
+      "id": "crystal-clear-v5-dark",
+      "name": "Crystal Clear v5 - Material Dark",
+      "description": "Sleek material dark variation.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/crystal_dark.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484277504624693320/crystal-clear-v5-material-dark.zip?ex=69bda4a5&is=69bc5325&hm=b698741c67d01dd7f092f995989ff1b1378a07d7b7cff11814eb0bfdc7aa1109&"
+    },
+    {
+      "id": "crystal-clear-v5-light",
+      "name": "Crystal Clear v5 - Material Light",
+      "description": "Clean material light variation.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/crystal_light.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484277551777054860/crystal-clear-v5-material-light.zip?ex=69bda4b0&is=69bc5330&hm=0537a2359a48d174e81856509c125b69cf3e1a2a1da9ec6645593b308e391d01&"
+    },
+    {
+      "id": "bocchi-the-rock",
+      "name": "Bocchi the Rock",
+      "description": "The ultimate pack with character variants.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/bocchi.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349370517295114/bocchi_the_rock.zip?ex=69bde793&is=69bc9613&hm=a2c7872699f410c7e84d42e269a0b8fb02bea8797c09c0ce6eb8c898eef65e3b&"
+    },
+    {
+      "id": "cinnamoroll",
+      "name": "Cinnamoroll",
+      "description": "Cute Cinnamoroll theme.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/cinnamoroll.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349370819416225/cinnamoroll.zip?ex=69bde793&is=69bc9613&hm=77752b41f4178a6fbe28447e8a252e47342455c8d7d383c4675c52a17bf29336&"
+    },
+    {
+      "id": "fern",
+      "name": "Fern",
+      "description": "Fern from Frieren pack.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/fern.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349371100430517/fern.zip?ex=69bde793&is=69bc9613&hm=2c7945f18fb6cfb41f2f060e9cc44a5bee9d753f64ce53cdca5856a7ebf39758&"
+    },
+    {
+      "id": "frieren",
+      "name": "Frieren",
+      "description": "Frieren character cursors.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/frieren.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349371368738987/Frieren_Cursor.zip?ex=69bde794&is=69bc9614&hm=92dea618fcb798b99dc314043849935d6fd1e64d93234df405d386aceda25229&"
+    },
+    {
+      "id": "glass-plane",
+      "name": "Glass Plane",
+      "description": "Minimalist glass-style cursors.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/glass.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349371741900870/glass-plane.zip?ex=69bde794&is=69bc9614&hm=122e9c1593980989b1e2d803c74f6d480f3ab41f1494c765b55948cf96952006&"
+    },
+    {
+      "id": "anya-forger",
+      "name": "Anya Forger",
+      "description": "Anya from Spy x Family.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/anya.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349372299874496/anya-forger.zip?ex=69bde794&is=69bc9614&hm=ac40b0583e5b866bf13a8b4aff19e336fb0559a7a9f9710a7e672914a0c86739&"
+    },
+    {
+      "id": "hello-kitty",
+      "name": "Hello Kitty",
+      "description": "Classic Hello Kitty collection.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/kitty.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349394370166804/hello_kitty.zip?ex=69bde799&is=69bc9619&hm=2edfaee6c14d659d5049f541a605924810ef5b86dcb3b86141583ba794af5690&"
+    },
+    {
+      "id": "miyabi",
+      "name": "Miyabi",
+      "description": "Elegant Miyabi cursors.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/miyabi.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349394605179071/miyabi.zip?ex=69bde799&is=69bc9619&hm=92c8a21f4f8f17849f22fbaaf8310b612ef969f9a291c8ab4fb2b33bc6032ea6&"
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "description": "Glowing neon blue style.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/neon.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349394873618474/neon.zip?ex=69bde799&is=69bc9619&hm=6cfd418ea4bfd0cc2f274333424ee9471ba5ff0cf29d84cbbe9fdf4a0b966675&"
+    },
+    {
+      "id": "pink-paw",
+      "name": "Pink Paw",
+      "description": "Soft pink paw cursors.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/paw.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349395129335908/pink_paw.zip?ex=69bde799&is=69bc9619&hm=9ac38de6617e5e10b5763209b24d224e7c097e3bab9202ef4da717537442c0b3&"
+    },
+    {
+      "id": "pusheen",
+      "name": "Pusheen",
+      "description": "Chubby Pusheen cat cursors.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/pusheen.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349395401969815/Pusheen.zip?ex=69bde799&is=69bc9619&hm=3dbb8340d22fa8f6657dbff5262322958a27fca6ec0d6bcff2a498ea859a426b&"
+    },
+    {
+      "id": "sakura",
+      "name": "Sakura",
+      "description": "Beautiful cherry blossom theme.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/sakura.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349395834245200/Sakura.zip?ex=69bde799&is=69bc9619&hm=641098f4e4f18e3fee3b4bccbb0136e2ac1bdce5a389b8352d2523ab5813e067&"
+    },
+    {
+      "id": "simplify-dot-2-dark",
+      "name": "Simplify Dot 2 - Dark",
+      "description": "Minimalist dot style (Dark).",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/dot_dark.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349396073058304/Simplify_Dot_2_Dark.zip?ex=69bde799&is=69bc9619&hm=049324235cf2fa44ab22f6c83bc04a082d6bc766d3d78878d7b9d631263c740e&"
+    },
+    {
+      "id": "simplify-dot-2-light",
+      "name": "Simplify Dot 2 - Light",
+      "description": "Minimalist dot style (Light).",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/dot_light.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349396341755985/Simplify_Dot_2_Light.zip?ex=69bde799&is=69bc9619&hm=bb9b40331d4c2230b01f9e2ad367269c5dc5a9b452f694d887227c305ee2ff08&"
+    },
+    {
+      "id": "skyrim",
+      "name": "Skyrim",
+      "description": "Elder Scrolls V: Skyrim cursors.",
+      "preview": "https://raw.githubusercontent.com/luuooss/jolie-cursor/main/previews/skyrim.png",
+      "downloadUrl": "https://cdn.discordapp.com/attachments/1355578779442876477/1484349396576632943/Skyrimouses.zip?ex=69bde79a&is=69bc961a&hm=bc5aa1cc4067dba865e34380c333446bd583f48ff6e7edbf9a3d987e074f2d8f&"
+    }
+  ]
+}
